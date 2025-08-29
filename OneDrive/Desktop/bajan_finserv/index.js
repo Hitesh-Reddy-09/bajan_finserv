@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 
-// Hardcoded details (replace with dynamic if needed)
+
 const FULL_NAME = "john_doe";
 const DOB = "17091999";
 const EMAIL = "john@xyz.com";
@@ -57,7 +57,7 @@ function processData(data) {
     }
   }
 
-  // Reverse alphaConcat and apply alternating caps
+ 
   let concatString = alternatingCaps(alphaConcat.split("").reverse().join(""));
 
   return {
@@ -74,7 +74,7 @@ function processData(data) {
   };
 }
 
-// Main API
+
 app.post("/bfhl", (req, res) => {
   try {
     if (!req.body || !req.body.data) {
@@ -95,12 +95,12 @@ app.post("/bfhl", (req, res) => {
   }
 });
 
-// Health Check
+
 app.get("/", (req, res) => {
   res.send("Full Stack Question Paper API is running...");
 });
 
-// Start server
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
