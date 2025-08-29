@@ -5,10 +5,10 @@ const app = express();
 app.use(bodyParser.json());
 
 
-const FULL_NAME = "john_doe";
-const DOB = "17091999";
-const EMAIL = "john@xyz.com";
-const ROLL_NUMBER = "ABCD123";
+const FULL_NAME = "Bollavaram Rama Hitesh Reddy";
+const DOB = "21072005";
+const EMAIL = "brhiteshreddy@gmail.com";
+const ROLL_NUMBER = "22BKT0119";
 
 // Helper functions
 function isNumber(str) {
