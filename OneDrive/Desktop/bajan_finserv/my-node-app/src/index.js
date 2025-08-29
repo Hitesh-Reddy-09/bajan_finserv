@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-const FULL_NAME = "john_doe";
-const DOB = "17091999";
-const EMAIL = "john@xyz.com";
-const ROLL_NUMBER = "ABCD123";
+const FULL_NAME = "Bollavaram Rama Hitesh Reddy";
+const DOB = "21072005";
+const EMAIL = "brhiteshreddy@gmail.com";
+const ROLL_NUMBER = "22BKT0119";
 
 function isNumber(str) {
     return /^[0-9]+$/.test(str);
